@@ -46,8 +46,11 @@ Detail code running instruction:
 Pre-request:
 
 Python (Recommand Anaconda https://www.continuum.io/downloads)
+
 caffe (http://caffe.berkeleyvision.org/)
+
 Resnet (https://github.com/KaimingHe/deep-residual-networks)
+
 Competetion data (https://www.kaggle.com/c/yelp-restaurant-photo-classification/data)
 
 1.
