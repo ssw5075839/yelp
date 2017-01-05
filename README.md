@@ -41,7 +41,7 @@ After business-level features are computed, we can use our favorite classifiers 
 
 Another point is that we cannot train the CNN end to end because at the top the classifier (Xgboost) cannot back-propgated. Maybe later on we can incorporate classifier capable of back-propgate to the caffe framework and dealing with average of various number of input. If this goal is achieved, the fine tuned CNN is expected to achieve better performance
 
-Detail code running instruction:
+Detailed code running instruction:
 
 Pre-request:
 
