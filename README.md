@@ -1,3 +1,5 @@
+
+
 This is a solution to Kaggle Yelp Restaurant Photo Classification https://www.kaggle.com/c/yelp-restaurant-photo-classification
 
 This solution achieves around 0.8241 in private leader board with ResNet-152. If you want to try to ensemble more CNNS, you could probably achieve higher scores.
@@ -53,13 +55,14 @@ Resnet (https://github.com/KaimingHe/deep-residual-networks)
 
 Competetion data (https://www.kaggle.com/c/yelp-restaurant-photo-classification/data)
 
-1. Run CNN feature extractor: 
+Run CNN feature extractor: 
 
-   python CNN_extract_features.py
+   {\bf python CNN_extract_features.py}
 
 In CNN_extract_features.py, the program will first extract train and test photo features using the selected CNN, then aggregate image level features into business level features.
 
 optional arguments:
+
   -h, --help            show this help message and exit
   
   --caffe_root CAFFE_ROOT
@@ -88,7 +91,7 @@ optional arguments:
   --batch_size BATCH_SIZE
                         batch size for the CNN to extract features, deafult 14 is used under the setting of 3*224*224 image, ResNet-152 and gtx 1080 8GB gpu. This highly depends on the CNN structure and your GPU (or main) memory. Note if you want to change image size, you probably need to change all the 224*224 number in the code.
 
-2. Run ensemble.py:
+Run ensemble.py:
 
    python ensemble.py
    
@@ -114,4 +117,4 @@ optional arguments:
                         
   --n_fold N_FOLD       the number of folds to cross-validate. Default is 10.
   
-  3. Finally, submit the submission_res5c_xgb_svm_ensem.csv file to kaggle to get your score.
+Finally, submit the submission_res5c_xgb_svm_ensem.csv file to kaggle to get your score.
