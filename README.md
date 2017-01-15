@@ -108,4 +108,4 @@ However, Xgboost seems has little improvment or even worse performance on the PC
                         
   --n_fold N_FOLD<br />the number of folds to cross-validate. Default is 10.
   
-Finally, submit the submission_res5c_xgb_svm_ensem.csv file to kaggle to get your score.
+##Finally, submit the submission_res5c_xgb_svm_ensem.csv file to kaggle to get your score.
